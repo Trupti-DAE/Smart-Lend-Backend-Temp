@@ -17,10 +17,12 @@ const userRoutes = require('./routes/users');
 // const borrowerRoutes = require('./routes/borrowers');
 const lenderRoutes = require('./routes/lenders');
 const borrowerRoutes = require('./routes/borrowers');
+const loanRoutes = require('./routes/loans');
 app.use('/api/borrowers', borrowerRoutes);
 app.use('/api/users', userRoutes);
 // app.use('api/borrowers', borrowerRoutes);
 app.use('/api/lenders', lenderRoutes);
+app.use('/api/loans', loanRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 5000;
