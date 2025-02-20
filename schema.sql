@@ -125,3 +125,10 @@ INSERT INTO LenderProfile (lender_id, max_investment, min_investment, risk_appet
 (7, 200000, 5000, 'Low', 5.0, 12),
 (8, 750000, 25000, 'Medium', 8.5, 18),
 (10, 300000, 10000, 'High', 10.0, 48);
+
+INSERT INTO LoanRequests (borrower_id, amount, interest_rate, loan_term, status) VALUES
+(1, 500000, 7.5, 24, 'pending'),
+(2, 300000, 9.2, 36, 'approved'),
+(3, 1000000, 6.8, 48, 'rejected'),
+(4, 150000, 8.0, 12, 'pending'),
+(9, 750000, 7.2, 60, 'funded');
